@@ -12,7 +12,7 @@ public:
                 i++;
             }
             else {
-                if (((long) res * 10 > std::numeric_limits<int>::max()) || ((long) res * 10 < std::numeric_limits<int>::min())) {
+                if (((long) res * 10 > INT_MAX) || ((long) res * 10 < INT_MIN)) {
                         res = 0;
                         break;
                 }
